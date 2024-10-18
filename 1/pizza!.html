@@ -9,18 +9,11 @@
             <h2>If you'd like to order pizza, please fill out this form</h2>
             <p>
                 <strong>Pizza size?</strong><br>
-                <label>Small
-                    <input name="psize" type="radio">
-                </label><br>
-                <label>Medium
-                    <input type ="radio" name="psize"><!--wanted radiobox on the left :(-->
-                </label><br>
-                <label>Large
-                    <input name="psize" type ="radio">
-                </label><br>
-                <label>X-Large
-                    <input name="psize" type ="radio">
-                </label><br>
+                    <input type="radio" name="psize" value="small"> <label>Small</label><br>
+                    <input type ="radio" name="psize" value="medium"><label>Medium</label><br>
+                    <input type="radio" name="psize" value="large"><label>Large</label><br>
+                    <input type="radio" name="psize" value="xlarge"><label>X-Large</label><br>
+                
             </p>
     
             <p>
@@ -80,7 +73,8 @@
             </p>
 
             <p>
-                <textarea name="msg" rows="3" cols="6"> Message: </textarea>
+                <label> <strong>Anything else? Put it here!</strong><br>
+                <textarea name="msg" rows="3" cols="40"> Message: </textarea></label>
             </p>
             <p>
                 <input type="submit" name="s" value="Submit">
