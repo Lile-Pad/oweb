@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Pizza Flamingo order form</title>
+    </head>
+    <body>
+        <form method="post" action="https://www.yelp.com/">
+            <h1>Pizza order form</h1>
+            <h2>If you'd like to order pizza, please fill out this form</h2>
+            <p>
+                <strong>Pizza size?</strong><br>
+                <label>Small
+                    <input name="psize" type="radio">
+                </label><br>
+                <label>Medium
+                    <input type ="radio" name="psize"><!--wanted radiobox on the left :(-->
+                </label><br>
+                <label>Large
+                    <input name="psize" type ="radio">
+                </label><br>
+                <label>X-Large
+                    <input name="psize" type ="radio">
+                </label><br>
+            </p>
+    
+            <p>
+                <strong>Crust type?</strong><br>
+                <select name="ctype">
+                    <option selected>Normal</option>
+                    <option>Deep-Dish</option>
+                    <option>Cheese-Filled</option>
+                    <option>Soft</option>
+                    <option>With sesame seeds</option>
+                    <option>Flamingo special(bacon wrap)</option>
+                </select>
+            </p>
+    
+            <p>
+                <strong>Toppings?</strong><br>
+                <label> Pepperoni
+                    <input name="t" type="checkbox">
+                </label>
+                <label> Mozzarella
+                    <input name="t" type="checkbox">
+                </label>
+                <label> Parmesan
+                    <input name="t" type="checkbox">
+                </label>
+                <label> Mushrooms
+                    <input name="t" type="checkbox">
+                </label>
+                <label> Pepper
+                    <input name="t" type="checkbox">
+                </label>
+                <label> Onion
+                    <input name="t" type="checkbox">
+                </label>
+                <label> Olives
+                    <input name="t" type="checkbox">
+                </label>
+                <label> Anchovies
+                    <input name="t" type="checkbox">
+                </label>
+                <label> Prosciutto
+                    <input name="t" type="checkbox">
+                </label>
+                <label> Smoked Ham
+                    <input name="t" type="checkbox">
+                </label>
+                <label> Sausage
+                    <input name="t" type="checkbox">
+                </label>
+                <label> Basil
+                    <input name="t" type="checkbox">
+                </label>
+            </p>
+            <p>
+                <label><strong>Name:</strong><input name="name" type="text" maxlength="30"></label><br>
+                <label><strong>Phone:</strong><input name="pnum" type="text" maxlength="9"></label>
+            </p>
+
+            <p>
+                <textarea name="msg" rows="3" cols="6"> Message: </textarea>
+            </p>
+            <p>
+                <input type="submit" name="s" value="Submit">
+                <input type="reset" name="r" value="Reset">
+            </p>
+        </form>
+    </body>
+</html>
