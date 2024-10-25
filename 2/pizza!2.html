@@ -1,0 +1,126 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Pizza Flamingo order form</title>
+        <link rel="stylesheet" href="pizzastyle.css">
+        <style>
+            select {
+                border: dotted;
+                border-color: rgb(176, 33, 33);
+                background-color: rgb(239, 176, 176);
+            }
+            input[type=text]
+            /*bless w3schools*/ {
+                border: dotted;
+                border-color: rgb(176, 33, 33);
+                background-color: rgb(244, 189, 189);
+            }
+            input[type=submit],[type=reset]
+            {
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                border: dotted;
+                width: 100;
+                height: 50;
+                border-color: rgb(176, 33, 33);
+                background-color: rgb(244, 189, 189);
+                text-decoration: underline;
+                font-weight: bold;
+
+            }
+            textarea{
+                resize: none;
+                background-image: url(logo\ -\ Copy.png);
+                background-size: 20px 20px;
+                background-repeat: repeat;
+                background-color: rgb(239, 227, 211);
+                box-shadow: 15px 15px 15px rgb(190, 8, 8);
+            }
+        </style>
+    </head>
+    <body>
+        <form method="post" action="">
+            <input type = "hidden" name = "recipient"
+            value = "pizzaflamingo@someemail.bizzzzzzzzzzz">
+         <input type = "hidden" name = "subject" 
+            value = "Pizza Form">
+         <input type = "hidden" name = "redirect" 
+            value = "thankyou.html"> <!--thankyou page to be made-->
+
+            <h1>Pizza order form</h1>
+            <h2>If you'd like to order pizza, please fill out this form</h2>
+            <p>
+                <strong>Pizza size?</strong><br>
+                    <input type="radio" name="psize" value="small"> <label>Small</label><br>
+                    <input type ="radio" name="psize" value="medium"><label>Medium</label><br>
+                    <input type="radio" name="psize" value="large"><label>Large</label><br>
+                    <input type="radio" name="psize" value="xlarge"><label>X-Large</label><br>
+                
+            </p>
+    
+            <p>
+                <strong>Crust type?</strong><br>
+                <select name="ctype">
+                    <option selected>Normal</option>
+                    <option>Deep-Dish</option>
+                    <option>Cheese-Filled</option>
+                    <option>Soft</option>
+                    <option>With sesame seeds</option>
+                    <option>Flamingo special(bacon wrap)</option>
+                </select>
+            </p>
+    
+            <p>
+                <strong>Toppings?</strong><br>
+                <label> Pepperoni
+                    <input name="t" type="checkbox">
+                </label>
+                <label> Mozzarella
+                    <input name="t" type="checkbox">
+                </label>
+                <label> Parmesan
+                    <input name="t" type="checkbox">
+                </label>
+                <label> Mushrooms
+                    <input name="t" type="checkbox">
+                </label>
+                <label> Pepper
+                    <input name="t" type="checkbox">
+                </label>
+                <label> Onion
+                    <input name="t" type="checkbox">
+                </label>
+                <label> Olives
+                    <input name="t" type="checkbox">
+                </label>
+                <label> Anchovies
+                    <input name="t" type="checkbox">
+                </label>
+                <label> Prosciutto
+                    <input name="t" type="checkbox">
+                </label>
+                <label> Smoked Ham
+                    <input name="t" type="checkbox">
+                </label>
+                <label> Sausage
+                    <input name="t" type="checkbox">
+                </label>
+                <label> Basil
+                    <input name="t" type="checkbox">
+                </label>
+            </p>
+            <p>
+                <label><strong>Name:</strong><input name="name" type="text" maxlength="30"></label><br>
+                <label><strong>Phone:</strong><input name="pnum" type="text" maxlength="9"></label>
+            </p>
+
+            <p>
+                <label> <strong>Anything else? Put it here!</strong><br>
+                <textarea name="msg" rows="3" cols="40"> Message: </textarea></label>
+            </p>
+            <p>
+                <input type="submit" name="s" value="Submit">
+                <input type="reset" name="r" value="Reset">
+            </p>
+        </form>
+    </body>
+</html>

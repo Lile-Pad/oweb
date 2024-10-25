@@ -1,0 +1,11 @@
+head {color:rgb(93, 7, 7); text-align: center;}
+body {font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    background-color: rgb(239, 227, 211); 
+    background-image: url(logo\ -\ Copy.png); 
+    /*morav rachno da ja namalam vidlivostna na slikata oti vo css posebno nema opcija za bg-image-opacity*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;}
+p{text-align: center; font-weight: bold;}
+h1{text-align: center; color: rgb(63, 7, 7);}
+h2{text-align: center; color: rgb(196, 46, 93);}
