@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Details | Oldies but Goodies</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img src="logow.png" height="100" width="100" style="display: inline; float: left; margin-left: 10%; margin-right: 8%;">
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="catalog.html">Catalogue</a></li>
+        <li><a href="#">Car Gallery</a></li>
+        <li><a href="test-drive.html">Test Drive</a></li>
+        <li><a href="survey.html">Survey</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h1>Our Car Gallery<h1>
+      <p>Our clients deserve the very best! Like,comment, and share your wheels here!</p>
+    </section>
+    <section class="car-details">
+      <div class="car-gallery">
+        <div class="gallery-item">
+          <img src="corvettefront.jpeg" alt="corvettef">
+          <div class="likes">
+            <button class="btn like-btn">
+              <i class="fas fa-thumbs-up"></i> <span class="like-count">56</span>
+            </button>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="corvetteinterior.jpg" alt="corvettei">
+          <div class="likes">
+            <button class="btn like-btn">
+              <i class="fas fa-thumbs-up"></i> <span class="like-count">97</span>
+            </button>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="beetleinterior.jpeg" alt="beetle interior">
+          <div class="likes">
+            <button class="btn like-btn">
+              <i class="fas fa-thumbs-up"></i> <span class="like-count">34</span>
+            </button>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="yugoengine.jpeg" alt="yugoengine">
+          <div class="likes">
+            <button class="btn like-btn">
+              <i class="fas fa-thumbs-up"></i> <span class="like-count">4</span>
+            </button>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="miata2.jpeg" alt="miata2">
+          <div class="likes">
+            <button class="btn like-btn">
+              <i class="fas fa-thumbs-up"></i> <span class="like-count">123</span>
+            </button>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="cadillacinterior.jpeg" alt="cadillac interior">
+          <div class="likes">
+            <button class="btn like-btn">
+              <i class="fas fa-thumbs-up"></i> <span class="like-count">94</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Add more gallery items as needed -->
+        <div class="upload-image">
+          <h3>Upload New Image</h3>
+          <input type="file" id="uploadImage" accept="image/*">
+          <button class="btn" onclick="uploadImage()">Upload</button>
+        </div>
+      </div>
+      <div class="car-comments">
+        <h2>Comments:</h2>
+        <div class="comment">
+          <h3>Ana Dunn</h3>
+          <p>I test drove the Miata MX-5 and it was an absolute blast! The handling is doable and it's in amazing shape.</p>
+        </div>
+        <div class="comment">
+          <h3>Timothy Martin</h3>
+          <p>I heard that Yugo was popular in the Balkan States. After test driving it... I don't understand why.</p>
+        </div>
+        <!-- Add more comments here -->
+        <form class="add-comment">
+          <h3>Leave a Comment</h3>
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment" required></textarea>
+          </div>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+      <div class="delete-images">
+        <h3>Delete Images</h3>
+        <button class="btn" onclick="deleteImage(0)">Delete Image</button>
+      </div>
+    </section>
+
+
+    <div class="reviews-section">
+      <h2>Expert Reviews</h2>
+      <div class="disclaimer">
+        <p>The following reviews are collected from various websites for demonstration purposes only. 
+        Each review remains the property of its respective author and source website. This content is used purely 
+        for educational demonstration. (don't sue me) </p>
+      </div>
+      <button onclick="fetchReviews()" class="fetch-button">Load Reviews</button>
+      <div id="reviews"></div>
+    </div>
+
+    <div class="resources-section">
+      <h2>Resources & Further Reading</h2>
+      <div class="resource-list">
+        <a href="#" class="resource-link">
+          <strong>Mazda Miata Club</strong>
+          <p>Join the community of Miata enthusiasts!</p>
+        </a>
+        <a href="#" class="resource-link">
+          <strong>Vintage Car Buyer's Guide</strong>
+          <p>Buying Vintage Cars 101</p>
+        </a>
+        <a href="#" class="resource-link">
+          <strong>Yugo Parts Catalog</strong>
+          <p>Find original and aftermarket parts for any Yugo at great prices</p>
+        </a>
+        <a href="#" class="resource-link">
+          <strong>Restoration Tips</strong>
+          <p>Expert advice on restoring your classic car to pristine condition</p>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Oldies but Goodies</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

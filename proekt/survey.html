@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <title>User Experience Survey | Oldies but Goodies</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <img src="logow.png" height="100" width="100" style="display: inline; float: left; margin-left: 10%; margin-right: 8%;">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="catalog.html">Catalogue</a></li>
+        <li><a href="cars.html">Car Gallery</a></li>
+        <li><a href="test-drive.html">Test Drive</a></li>
+        <li><a href="#">Survey</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h1>User Experience Survey</h1>
+      <br>
+      <p>Do you like our site? Tell us about it! Don't like our site? Tell us about that too.</p>
+      <br>
+    </section>
+      <form>
+        <div class="form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form">
+          <label for="rating">How was your experience browsing the site?:</label>
+          <select id="rating" name="rating" required>
+            <option value="">Select a rating</option>
+            <option value="5">5 - Excellent</option>
+            <option value="4">4 - Good</option>
+            <option value="3">3 - Average</option>
+            <option value="2">2 - Below Average</option>
+            <option value="1">1 - Poor</option>
+          </select>
+        </div>
+        <div class="form">
+          <label for="rating2">How was your experience with admin communication?:</label>
+          <select id="rating2" name="rating2" required>
+            <option value="">Select a rating</option>
+            <option value="5">5 - Excellent</option>
+            <option value="4">4 - Good</option>
+            <option value="3">3 - Average</option>
+            <option value="2">2 - Below Average</option>
+            <option value="1">1 - Poor</option>
+          </select>
+        </div>
+        <div class="formlikes">
+          <label for="likes">What do you like most about our website?</label> <br>
+          <label for="select1" class="btnc">Rare Car Models</label>
+          <input type="checkbox" id="select1" name="selec1">
+          <label for="select2" class="btnc">Price points</label>
+          <input type="checkbox" id="select2" name="selec2">
+          <label for="select3" class="btnc">Customer Support</label>
+          <input type="checkbox" id="select3" name="selec3">
+          <label for="select4" class="btnc">Car Guarantee Licenses</label>
+          <input type="checkbox" id="select4" name="selec4">
+          <label for="select5" class="btnc">Refurbishing/Restoration services</label>
+          <input type="checkbox" id="select5" name="selec5">
+          <label for="select6" class="btnc">Community</label>
+          <input type="checkbox" id="select6" name="selec6">
+        </div>
+        <div class="form">
+          <label for="feedback">Feedback:</label>
+          <textarea id="feedback" name="feedback" required></textarea>
+        </div>
+        <div class="form">
+          <label for="rec">How likely are you to recommend our services to a fellow car enthusiast? (1-Unlikely; 5- Very Likely)</label><br>
+          <label for="rad1" class="rad">1</label>
+          <input type="radio" id="rad1" name="rad">
+          <label for="rad2" class="rad">2</label>
+          <input type="radio" id="rad2" name="rad">
+          <label for="rad3" class="rad">3</label>
+          <input type="radio" id="rad3" name="rad">
+          <label for="rad4" class="rad">4</label>
+          <input type="radio" id="rad4" name="rad">
+          <label for="rad5" class="rad">5</label>
+          <input type="radio" id="rad5" name="rad">
+        </div>
+        <button type="submit" class="btn">Submit Survey</button>
+      </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Oldies but Goodies</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
