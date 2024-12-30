@@ -1,0 +1,28 @@
+<div *ngIf = "vozac?.name != undefined" [ngClass]="klasi()">
+    <ng-template role ="alert" aria-live="polite" #noImg>Slika</ng-template>
+    <div role="heading" [style.text-decoration]="stilovi()" >
+        {{indeks+". "+ vozac?.name}}
+    </div>
+
+    <img width="300" *ngIf="vozac?.iconUrl; else noImg" [src]="vozac?.iconUrl">
+</div>
+<div aria-label="Team">
+    {{vozac?.team}}
+</div>
+<div>
+<div aria-hidden="true">
+    <!--unimportant info is hidden-->
+    &nbsp;
+</div>
+</div>
+<div [ngSwitch]="vozac?.category" aria-label="category">
+    <div *ngSwitchCase="'EXPERT'">Expert</div>
+    <div *ngSwitchCase="'LUNATIC'">Lunatic</div>
+    <div *ngSwitchCase="'ASD'">Asd</div>
+    <div *ngSwitchDefault>Default</div>
+
+</div>
+<div>
+    <button (click)="onDrvView()" class="btn" role="button" aria-label="Binged">Get trolled with bing</button>
+</div><br><br>
+

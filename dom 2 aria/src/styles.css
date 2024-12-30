@@ -1,0 +1,8 @@
+html,body {background-color:rgb(255, 197, 221)}
+
+
+.is-odd{color: rgb(98, 148, 224);}
+.is-even{color: rgb(147, 43, 226);}
+.is-first{color: rgb(226, 43, 92); font-style: bold;}
+.is-last{color: rgb(226, 43, 92);}
+
