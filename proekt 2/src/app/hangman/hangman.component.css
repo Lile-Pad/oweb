@@ -1,0 +1,123 @@
+.game-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    color: #502c45;
+    margin-bottom: 30px;
+  }
+  
+  .word-display {
+    font-size: 2.5rem;
+    letter-spacing: 0.5rem;
+    margin: 2rem 0;
+    font-family: monospace;
+    color: #5e345b;
+  }
+  
+  .input-section {
+    margin: 1.5rem 0;
+  }
+  
+  input {
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    margin-right: 0.5rem;
+    border: 2px solid #db34ae;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  input:focus {
+    border-color: #b92989;
+  }
+  
+  input:disabled {
+    background-color: #ecf0f1;
+    border-color: #bdc3c7;
+  }
+  
+  button {
+    padding: 0.5rem 1.5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    background-color: #db34a6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover:not(:disabled) {
+    background-color: #b929a3;
+  }
+  
+  button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+  }
+  
+  .game-info {
+    margin: 1.5rem 0;
+    line-height: 1.6;
+  }
+  
+  .guesses {
+    font-size: 1.2rem;
+    color: #e74c3c;
+    font-weight: bold;
+  }
+  
+  .guessed-letters {
+    margin-top: 0.5rem;
+    color: #7f8c8d;
+    font-style: italic;
+  }
+  
+  .result {
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+  }
+  
+  .win {
+    color: #27ae60;
+  }
+  
+  .lose {
+    color: #c0392b;
+  }
+  
+  .hangman-image {
+    margin: 2rem 0;
+  }
+  
+  .hangman-image img {
+    border: 2px solid #bdc3c7;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  @media (max-width: 480px) {
+    .word-display {
+      font-size: 2rem;
+      letter-spacing: 0.3rem;
+    }
+  
+    input, button {
+      width: 100%;
+      margin: 0.5rem 0;
+    }
+  
+    .hangman-image img {
+      max-width: 100%;
+      height: auto;
+    }
+  }

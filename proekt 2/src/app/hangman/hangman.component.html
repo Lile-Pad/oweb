@@ -1,0 +1,38 @@
+<div class="game-container">
+  <div class="hangman-image">
+    <img [src]="currentImage"
+         alt="Hangman state"
+         height="200"
+         width="150">
+  </div>
+  <h1>Guess the word!</h1>
+  <div class="word-display">{{ displayWord }}</div>
+
+  <div class="input-section">
+    <input 
+      [(ngModel)]="inputLetter" 
+      [maxLength]="5" 
+      type="text"
+      placeholder="Enter a letter or word"
+      (keyup.enter)="submitGuess()"
+      [disabled]="isGameOver">
+    <button 
+      [disabled]="isGameOver || !inputLetter" 
+      (click)="submitGuess()">
+      Submit
+    </button>
+  </div>
+
+  <div class="game-info">
+    <div class="guesses">
+      Guesses Remaining: {{ guessesLeft }}
+    </div>
+    <div class="guessed-letters">
+      Guessed Letters: {{ Array.from(guessedLetters).join(', ') }}
+    </div>
+    <div [class]="'result ' + (isGameOver ? (result.includes('Congratulations') ? 'win' : 'lose') : '')">
+      {{ result }}
+    </div>
+  </div>
+
+</div>
